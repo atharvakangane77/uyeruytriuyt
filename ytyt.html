@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Grocery Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Grocery Store</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Welcome to My Grocery Store</h2>
+        <p>We offer a wide range of fresh fruits, vegetables, meat, dairy, and other grocery items at affordable prices.</p>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>My Grocery Store was founded in 2010 with the goal of providing our community with high-quality, affordable groceries. We source our products from local farms and producers whenever possible.</p>
+      </section>
+      <section id="products">
+        <h2>Our Products</h2>
+        <ul id="product-list"></ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Grocery Store. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
